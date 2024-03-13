@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "zod-prisma": "^0.5.4"
+  }
+}

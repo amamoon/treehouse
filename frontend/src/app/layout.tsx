@@ -18,20 +18,24 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className + " bg-[#FDEEB8]"}>
+			<body className={inter.className + " bg-[#FDEEB8] justify-between"}>
 				<Navbar />
 				<Providers>
-					{children}
+					<main className="flex-grow mb-auto h-screen">
+						{children}
+					</main>
 				</Providers>
+				<footer className="w-full bg-gray-100">
+					<div className="max-w-screen-xl mx-auto py-4 px-8">
+						<p className="text-center text-gray-500 text-sm">
+						© {new Date().getFullYear()} Treehouse. All rights reserved.
+						</p>
+						<p className="text-center text-gray-500 text-sm">
+							Created by Kosh Jama, Matthew Tactacan, Latticha Lerdwichagul & Akeef Mamoon
+						</p>
+					</div>
+				</footer>
 			</body>
-			<footer className="w-full bg-gray-100 mt-auto">
-				<div className="max-w-screen-xl mx-auto py-4 px-8">
-					<p className="text-center text-gray-500 text-sm">
-					© {new Date().getFullYear()} Treehouse. All rights reserved.
-					</p>
-					<p>Created by Kosh Jama, Matthew Tactacan, Latticha Lerdwichagul & Akeef Mamoon</p>
-				</div>
-			</footer>
 		</html>
 	);
 }

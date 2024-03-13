@@ -4,7 +4,6 @@ import StyledButton from "@/components/StyledButton/StyleButton";
 
 export default function Home() {
 	return (
-		<main>
 			<div className="flex flex-col items-center gap-10">
 				<div>
 					<Image src="/treehouse_logo.png" alt="Treehouse Logo" width={128} height={111}></Image>
@@ -20,6 +19,5 @@ export default function Home() {
 					</button>
 				</div>
 			</div>
-		</main>
 	);
 }
